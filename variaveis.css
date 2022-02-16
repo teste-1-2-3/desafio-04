@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('fontes/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('fontes/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fontes/Merriweather-Regular.ttf');
+}
+
+/*Variáveis*/
+:root {
+  --green: #04c35c;
+  --blue: #2b6cb0;
+
+  --white: #ffffff;
+  --white300: #f7fafc;
+
+  --dark: #1a202c;
+  --input: #e8e8e8;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  display: flex;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure {
+  height: max-content;
+  width: max-content;
+  margin: auto;
+  display: none;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+
+main {
+  position: absolute;
+  margin: auto 0px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}
+
+.main {
+  margin: auto;
+  width: max-content;
+  padding: 3em 1.5em;
+  font-family: 'Lato-Regular';
+}
+
+.main h2 {
+  font-size: 1.3em;
+  font-family: 'Merriweather';
+}
+
+.main h1 {
+  font-family: 'Merriweather';
+  font-size: 1.7em;
+}
+
+.main > p {
+  padding: 0.5em 0em;
+}
+
+span {
+  display: flex;
+  position: relative;
+}
+
+span > img {
+  width: 2em;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+  left: 2em;
+}
+
+.form {
+  width: 100%;
+  height: 3em;
+  padding: 0em 1em;
+  font-family: 'Lato-Regular';
+  border: 1px solid var(--input);
+  border-radius: 5px;
+  background: var(--white300);
+  margin: 0.5em 0em;
+}
+
+.attributes {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+input[type='button'] {
+  font-family: 'Lato-Bold';
+  color: white;
+  width: 100%;
+  padding: 1.3em;
+  margin: 0.5em 0em;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.enter {
+  background: var(--green);
+}
+
+.google {
+  background: var(--dark);
+}
+
+.register {
+  margin: 3em auto 0em auto;
+  display: flex;
+  width: max-content;
+  column-gap: 0.2em;
+}
+
+a:visited{
+  color: #2b6cb0;
+}
+
+@media (min-width: 720px) {
+  figure {
+    display: block;
+  }
+}
